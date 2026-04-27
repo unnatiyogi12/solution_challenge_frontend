@@ -2,7 +2,7 @@ import axios from 'axios';
 
 async function test() {
   try {
-    const res = await axios.get('http://localhost:5000/api/tasks/my');
+    const res = await axios.get('https://google-solution-challenge-cnbz.onrender.com/api/tasks/my');
     console.log("Success:", res.data);
   } catch (err) {
     if (err.response) {
