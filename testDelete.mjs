@@ -2,7 +2,7 @@ import axios from 'axios';
 
 async function test() {
   try {
-    const res = await axios.delete('https://google-solution-challenge-cnbz.onrender.com/api/tasks/fake-id-12345');
+    const res = await axios.delete('http://localhost:5000/api/tasks/fake-id-12345');
     console.log("Success:", res.data);
   } catch (err) {
     if (err.response) {
